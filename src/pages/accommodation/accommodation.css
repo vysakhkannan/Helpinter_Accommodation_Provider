@@ -1,0 +1,127 @@
+/* .breadcrumbs {
+    border: 1px solid #cbd2d9;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .breadcrumbs__item {
+    background: #fff;
+    color: #333;
+    outline: none;
+    padding: 0.75em 0.75em 0.75em 1.25em;
+    position: relative;
+    text-decoration: none;
+    transition: var(--transition)
+  }
+  
+  .breadcrumbs__item:hover:after,
+  .breadcrumbs__item:hover {
+    background: #edf1f5;
+  }
+  
+  .breadcrumbs__item:focus:after,
+  .breadcrumbs__item:focus,
+  .breadcrumbs__item.is-active:focus {
+    background: #323f4a;
+    color: #fff;
+  }
+  
+  .breadcrumbs__item:after,
+  .breadcrumbs__item:before {
+    background: white;
+    bottom: 0;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transition: var(--transition);
+    width: 1em;
+    z-index: 1;
+  }
+  
+  .breadcrumbs__item:before {
+    background: #cbd2d9;
+    margin-left: 1px;
+  }
+  
+  .breadcrumbs__item:last-child {
+    border-right: none;
+  }
+  
+  .breadcrumbs__item.is-active {
+    background: #edf1f5;
+  } */
+
+
+  /* .AccomHeader {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 12px 16px;
+  }
+
+  .AccomHeader h2 {
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .breadcrumbs {
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  nav.breadcrumbs a {
+    color: var(--black2);
+    font-size: small;
+  }
+  nav.breadcrumbs .navigate {
+    color: var(--black2);
+    font-size: 30px;
+  }
+  .content {
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 12px;
+  }
+  
+  .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+  } */
+
+  .accommodation {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+    position: relative;
+    /* background: var(--black2); */
+    /* padding: 20px; */
+  }
+
+  .content .accomHeader {
+    position: relative;
+    border-radius: 20px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+  }
+
+  .content .accomDetails {
+    position: relative;
+    border-radius: 20px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+
+  }
