@@ -11,7 +11,6 @@ import {MdOutlineBedroomParent} from 'react-icons/md'
 
 const Sidebar = (props) => {
   const [active, setActive] = useState('#dashboard')
-  console.log(props.toggle)
   return (
     <div className='navigation' className={props.toggle === '#active' ? 'active navigation' :'navigation'} >
         <ul>

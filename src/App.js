@@ -7,7 +7,6 @@ import Sidebar from './components/sidebar/Sidebar'
 function App() {
   const [toggle, setToggle] = useState('navigation')
   // const [main, setMain] = useState('main')
-  console.log(toggle)
   return (
     <div className="App">
        <Sidebar toggle={toggle} setToggle={setToggle} />

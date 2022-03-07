@@ -1,0 +1,152 @@
+.accommodationAdd {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.content .accomFormArea {
+    position: relative;
+    border-radius: 20px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.content .accomFormArea h4 {
+    font-weight: 200;
+    color: var(--blue);
+}
+
+.accomFormArea .formArea .part {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.formArea .part .area1 table {
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+}
+
+.formArea .part .area1 table input{
+    border: 1px solid var(--black2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 8px 0;
+}
+
+.formArea .part .area1 table select{
+    padding: 10px;
+    border: 1px solid var(--black2);
+    background: var(--white);
+    width: 80%;
+    margin: 8px 0;
+}
+
+.formArea .part .area2 table {
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+}
+
+
+.formArea table tr td label{
+
+    font-weight: 600;
+
+}
+
+.formArea .part .area2 table input{
+    border: 1px solid var(--black2);
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.formArea .part .area2 table input:last-child{
+    border: 1px solid var(--black2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+.formArea .part .area2 table tr td label.services{
+    padding-left: 12px;
+    font-weight: 100;
+}
+
+.area3 label {
+    font-weight: 600;
+}
+
+.area3 .pictureUpload label {
+    font-weight: 600;
+}
+
+.area3 .pictureUpload {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px;
+}
+
+.area4 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.area4 a {
+    margin-left: 10px;
+}
+
+/* ============================ Responsive ============================ */
+  @media (max-width: 991px){
+    /* .formArea .area3 {
+        display: none;
+    } */
+
+    .area3 .pictureUpload {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .area3 .pictureUpload .picture{
+
+        margin-top: 20px;
+    }
+
+  }
+
+  @media (max-width: 768px){
+    .accomFormArea .formArea .part {
+        grid-template-columns: 5fr;
+    }
+
+  }
+
+  @media (max-width: 480px){
+    .accomFormArea .area3 .pictureUpload {
+
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .formArea table tr td label{
+
+        font-size: medium;
+    
+    }
+
+
+
+    
+}
+
+
