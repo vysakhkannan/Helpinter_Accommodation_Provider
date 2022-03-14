@@ -21,7 +21,6 @@ const Routers = () => {
             <Route path='/accommodation' element={<Accommodation />} />
             <Route path='/accommodation/:accomID' element={<EditAccommodation />} />
             <Route path='/accommodation/add_accommodation' element={<AddAccommodation/>} />
-
             <Route/>
         </Routes>
   )

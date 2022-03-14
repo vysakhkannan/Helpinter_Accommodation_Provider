@@ -1,0 +1,10 @@
+.chatSection {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+    border-radius: 20px;
+    margin-top: 10px;
+
+}

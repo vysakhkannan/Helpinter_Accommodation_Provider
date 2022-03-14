@@ -54,7 +54,7 @@ const Sidebar = (props) => {
             </Link>
           </li>
         </ul>
-    </div>
+  </div>
   )
 }
 
