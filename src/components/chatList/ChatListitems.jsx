@@ -1,10 +1,31 @@
 import React from 'react'
 import Avatar from './Avatar'
 
-const ChatListitems = () => {
+const ChatListitems = (props) => {
+  const selectChat = (e) => {
+    for (
+      let index = 0;
+      index < e.currentTarget.parentNode.children.length;
+      index++
+    ) {
+      e.currentTarget.parentNode.children[index].classList.remove("active");
+    }
+    e.currentTarget.classList.add("active");
+  };
   return (
-    <div className="chatlistitem">
-        <Avatar />
+    <div 
+      style={{ animationDelay: `0.${props.animationDelay}s`}} 
+      onClick={selectChat}
+      className={`chatlist__item ${
+        props.active ? props.active : ''
+      }`}>
+        <Avatar 
+          image={
+            props.image ? props.image : "http://placehold.it/80x80"
+          }
+          />
+
+          isOnline={props.isOnline}
     </div>
   )
 }

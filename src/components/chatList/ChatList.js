@@ -1,11 +1,14 @@
 import React from 'react'
 import './chatlist.css'
+import { useState } from 'react'
 import {BsPlusLg} from 'react-icons/bs'
 import {FaEllipsisH} from 'react-icons/fa'
 import {BiSearchAlt} from 'react-icons/bi'
+import ChatListitems from './ChatListitems'
 
 const ChatList = () => {
-    allChatUsers = [
+
+    const allChatUsers = [
         {
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
@@ -86,6 +89,10 @@ const ChatList = () => {
           isOnline: true,
         },
       ];
+
+    const [allChats, setAllChats] = useState(allChatUsers)
+    console.log(allChats)
+
   return (
     <div className='main__chatlist'>
         <button className='btn'>
@@ -107,6 +114,18 @@ const ChatList = () => {
             </div>
         </div>
         <div className="chatlist__items">
+          {allChats.map((item, index) => {
+            return(
+              <ChatListitems
+                name={item.name}
+                key={item.id}
+                animationDelay={index +1}
+                active={item.active ? "active" : ""}
+                image={item.image}
+              />
+            )
+          })}
+
         </div>
     </div>
   )

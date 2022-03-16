@@ -4,9 +4,9 @@ const Avatar = (props) => {
   return (
     <div className='avatar'>
         <div className="avatar-img">
-            <img src="" alt="" />
+            <img src={props.image} alt="#" />
         </div>
-        <span className=''></span>
+        <span className={`isOnline ${props.isOnline}`}></span>
     </div>
   )
 }
