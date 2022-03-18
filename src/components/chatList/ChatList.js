@@ -17,14 +17,7 @@ const ChatList = () => {
           active: true,
           isOnline: true,
         },
-        {
-          image:
-            "https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg",
-          id: 2,
-          name: "Ayub Rossi",
-          active: false,
-          isOnline: false,
-        },
+
         {
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQEZrATmgHOi5ls0YCCQBTkocia_atSw0X-Q&usqp=CAU",
@@ -65,14 +58,7 @@ const ChatList = () => {
           active: false,
           isOnline: true,
         },
-        {
-          image:
-            "https://auraqatar.com/projects/Anakalabel/media//vesbrand/designer4.jpg",
-          id: 8,
-          name: "Autumn Mckee",
-          active: false,
-          isOnline: false,
-        },
+
         {
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSM6p4C6imkewkCDW-9QrpV-MMAhOC7GnJcIQ&usqp=CAU",

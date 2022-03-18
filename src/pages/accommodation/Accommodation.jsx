@@ -2,9 +2,23 @@ import React from 'react'
 import './accommodation.css'
 import {BsSearch} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import APIService from '../../apiservice/APIService'
 
 
 const Accommodation = () => {
+
+  const[accommodations, setAccommodation] = useState('')
+  const[loading, setLoading] = useState(false)
+
+  useEffect (() => {
+    APIService.getAccommodation()
+    .then(resp => setAccommodation(resp.data))
+    .catch(error =>{
+      console.log(error)
+    })
+  },[])
+
   return (
     <div className='accommodation'>
         <div className="content">
@@ -44,194 +58,29 @@ const Accommodation = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><Link className='btn' to="1">Update</Link></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>User1</td>
-                        <td>Blue Dine</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>$1200</td>
-                        <td>Paypal</td>
-                        <td>
-                          <select name="is_available" id="is_available_id">
-                            <option value="volvo">Select</option>
-                            <option value="saab">True</option>
-                            <option value="mercedes">False</option>
-                          </select>
-                        </td>
-                        <td><a className='btn' href="">Update</a></td>
-                        <td><a className='btn' href="">Delete</a></td>
-                    </tr>
+                    {accommodations && accommodations.map((accom) => {
+                      return(
+                        <tr>
+                      <td>{accom.name}</td>
+                      <td>{accom.name}</td>
+                      <td>{accom.province}</td>
+                      <td>{accom.city}</td>
+                      <td>{accom.accommodation_type}</td>
+                      <td>{accom.id}</td>
+                      <td>
+                        <select name="is_available" id="is_available_id">
+                          <option value="volvo">Select</option>
+                          <option value="saab">True</option>
+                          <option value="mercedes">False</option>
+                        </select>
+                      </td>
+                      <td><Link className='btn' to="1">Update</Link></td>
+                      <td><a className='btn' href="">Delete</a></td>
+                  </tr>
+                      )
+                    })}
                 </tbody>
+                <RotatingLines width="100" strokeColor="#FF5733" strokeWidth="1" />
             </table>
             <div class="pagination">
               <a href="#">&laquo;</a>

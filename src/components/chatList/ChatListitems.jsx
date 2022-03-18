@@ -23,9 +23,13 @@ const ChatListitems = (props) => {
           image={
             props.image ? props.image : "http://placehold.it/80x80"
           }
-          />
-
           isOnline={props.isOnline}
+          />
+      <div className='userMeta'>
+        <p>{props.name}</p>
+        <span className="activeTime">32 mins ago</span>
+
+      </div>
     </div>
   )
 }

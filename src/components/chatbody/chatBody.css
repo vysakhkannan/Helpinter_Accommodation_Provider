@@ -1,10 +1,21 @@
 .chatSection {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr 1fr;
     padding: 20px;
     box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
     border-radius: 20px;
     margin-top: 10px;
 
 }
+
+@media (max-width: 991px){
+    .chatSection {
+        grid-template-columns: 6fr;
+    }
+
+  }
+
+  @media (max-width: 768px){
+
+  }
